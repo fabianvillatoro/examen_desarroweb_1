@@ -10,10 +10,10 @@ urlpatterns = [
     # url(r'^$', 'autoSearch.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/',admin.site.urls),
     url(r'^carros/', include('carros.urls')),
     url(r'^',include('carros.urls', namespace = "templates")),
-    url(r'^detail/(?P<pk>[0-9]+)/$', car_detail.as_view(),name='CarDetail'),
-    url(r'^list$',car_list.as_view(), name='CarList'),
+    url(r'^detalle/(?P<pk>[0-9]+)/$', car_detail.as_view(),name='CarDetail'),
+    url(r'^lista$',car_list.as_view(), name='CarList'),
 
 ]

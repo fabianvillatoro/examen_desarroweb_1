@@ -19,3 +19,24 @@ class Car(models.Model):
 
     def __str__(self):
         return str(self.make)
+
+##class CarCreateView(models.Model):
+
+
+
+##    def __str__(self):
+##        return str(self.)
+
+#class CarUpdateView(models.Model):
+
+
+
+#    def __str__(self):
+#        return str(self.)
+
+#class CarDeleteView(models.Model):
+
+
+
+#    def __str__(self):
+#        return str(self.)

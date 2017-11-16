@@ -15,25 +15,23 @@
 
         </head>
         <body>
-                <h1 class="text-center"> Carros </h1>
+                <h1 class="text-center"> Ejemplo Autos  </h1>
 {% for Car in object_list %}
-
-<div class= "btn btn-info">{{Car.make}}</div>
-<br>
-<div class= "btn btn-warning">{{Car.Type}}</div>
-<br>
-<div class= "btn btn-link">{{Car.year}}</div>
-<br>
-<div class= "btn btn-link">{{Car.colour}}</div>
-<br>
-<div class= "btn btn-link">{{Car.created}}</div>
-<br>
-
+<table>
+<tr>
+<th><div class= "btn btn-link">{{Car.make}}</div></th>
+<th><div class= "btn btn-link">{{Car.tipe}}</div></th>
+<th><div class= "btn btn-link">{{Car.year}}</div></th>
+<th><div class= "btn btn-link">{{Car.colour}}</div></th>
+<th><div class= "btn btn-link">{{Car.created}}</div></th>
+</tr>
+</table>
  {% endfor %}
 
  <!-- All that javascript -->
         <script src="../jquery.min.js"></script>
         <script src="{% static "../js/bootstrap.min.js" %}"></script>
+
         </body>
 
 </html>

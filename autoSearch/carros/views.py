@@ -11,6 +11,7 @@ def home(request):
     tweets = Tweet.objects.all()
 
     return render(request, "home.html", context={"msg":"esta es una prueba", "tweets":tweets})
+
 def prueba(request):
     Context = locals()
     templates = loader.get_template('home.html')
